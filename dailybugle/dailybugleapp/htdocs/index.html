@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Bugle</title>
+    <style>
+        
+    </style>
+</head>
+<body onload="initPage()">
+
+    <header>
+        <div id="header_div">
+            <div id="dailybugle_div">
+                <h1 id="dailybugletext" onclick="initPage()">The Daily Bugle</h1>
+            </div>
+            <div>
+                <h3 id="username_display"></h3>
+            </div>
+            <div id="login_register_div" class="login_register_div">
+                <button id="login_button" class="login_register_button" onclick="openLoginForm()">Login</button>
+                <button id="register_button" class="login_register_button" onclick="openRegisterForm()">Register</button>
+                <button id="logout_button" class="login_register_button" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="login_modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLoginForm()">&times;</span>
+                <!-- Your login form goes here -->
+                <form id="loginForm" onsubmit="login(event)">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username_login" name="username" required><br>
+        
+                    <label for="password">Password:</label>
+                    <input type="password" id="password_login" name="password" required><br>
+        
+                    <input type="submit" value="Submit">
+                </form>
+                <h4 id="loginFormMessage"></h4>
+            </div>
+        </div>
+        <div id="register_modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeRegisterForm()">&times;</span>
+                <!-- Your login form goes here -->
+                <form id="registrationForm" onsubmit="register(event)">
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username_register" name="username" required><br>
+        
+                    <label for="password">Password:</label>
+                    <input type="password" id="password1_register" name="password" required><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password2_register" name="password" required><br>
+
+                    <label>Role:</label>
+                    <input type="radio" id="reader_role" name="role" value="reader" checked>
+                    <label for="reader_role">Reader</label>
+      
+                    <input type="radio" id="author_role" name="role" value="author">
+                    <label for="author_role">Author</label><br>
+        
+                    <input type="submit" value="Submit">
+                </form>
+                <h4 id="registrationFormMessage"></h4>
+            </div>
+        </div>
+        <div id="search_new_story_div">
+            <div id="search_div">
+                <input type="text" id="search_input" placeholder="Search story titles...">
+                <button id="search_button" class="login_register_button" onclick="search()">Search</button>
+            </div>
+            <div id="new_story_div">
+                <button id="new_story_button" class="new_story_button" onclick="loadContent('new')">New Story</button>
+            </div>
+        </div>
+        <article class="story" id="main_story">
+        </article>
+        <div id="sub_story_ad_div">
+        <div id="sub_story_div">
+        </div>
+
+        <div class="ad" id="ad">
+            <img src="nike_ad.jpeg" onclick="recordClick()" alt="Nike Ad">
+        </div>
+        </div>
+    </main>
+
+    <script src="dailybugleControl.js"></script>
+</body>
+</html>

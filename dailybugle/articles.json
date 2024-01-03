@@ -1,0 +1,31 @@
+[
+  {
+    "articles": [
+      {
+        "title": "Mountain Lion Attacks Virginia Man",
+        "story": "A man was hiking in the woods when he was attacked by a mountain lion.",
+        "comments": [
+          {
+            "user": "Sally",
+            "comment_text": "That's terrifying!"
+          },
+          {
+            "user": "James",
+            "comment_text": "I hope he's okay."
+          },
+          {
+            "user": "Jay",
+            "comment_text": "This is why I never hike alone."
+          }
+        ],
+        "metadata": {
+          "teaser": "Mountain Lion Attack",
+          "date": "2018-01-01",
+          "edited_date": "2018-01-01",
+          "author": "John Doe"
+        }
+      }
+    ]
+  }
+]
+

@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.story {
+    margin-bottom: 20px;
+}
+
+.ad {
+    margin-left: 20px;
+    text-align: center;
+}
+
+article {
+    background-color: #f1f1f1;
+    padding: 8px;
+}
+
+.login_register_button {
+    height: 30px;
+    width: 70px;
+}
+
+.new_story_button {
+    height: 30px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+#login_button {
+    margin-right: 20px;
+}
+
+.teaser {
+    display: flex;
+}
+
+#teaser {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.edit_submit_button {
+    height: 30px;
+    width: 70px;
+    margin-right: 40px;
+}
+
+#dailybugletext {
+    color: white;
+}
+
+#header_div {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.login_register_div {
+    margin-block: auto;
+    display: flex;
+}
+
+#sub_story_ad_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metadata {
+    display: flex;
+}
+
+.metadata_padding {
+    padding-right: 40px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#search_new_story_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search_div {
+    margin-bottom: 20px;
+    width: 830px;
+}
+
+#search_input {
+    width: 50%;
+    height: 25px;
+}
+
+[onclick] {
+    cursor: pointer;
+}
